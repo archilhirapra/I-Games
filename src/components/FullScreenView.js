@@ -4,6 +4,7 @@ function FullScreenAd(props) {
     const {setShowAd, children} = props;
     const [showCloseBtn, setShowCloseBtn] = useState(false);
 
+    
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setShowCloseBtn(!showCloseBtn);
@@ -12,7 +13,7 @@ function FullScreenAd(props) {
         return () => {
             clearTimeout(timeoutId);
         };
-    }, [])
+    },)
     return (
         <div className="full-screen-ad">
             {showCloseBtn && <button className="close-button" onClick={() => setShowAd(prev => !prev)}>
