@@ -60,7 +60,7 @@ const gamesList = [{
 },];
 
 const GameListPage = (props) => {
-    const {isFrom} = props;
+    // const {isFrom} = props;
     const [showAd, setShowAd] = useState(false);
     let divide = 6;
 
