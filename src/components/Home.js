@@ -8,8 +8,8 @@ function Home() {
     const navigate = useNavigate();
     return (
         <div className="container mt-3">
-            <div className='add-card h-200'>
-            </div>
+            {/*<div className='add-card h-200'>*/}
+            {/*</div>*/}
             <div className='d-flex flex-wrap my-5 align-items-center justify-content-evenly gap-3'>
                 <Card className='game-cards'
                       style={{backgroundImage: `url(${actionImg})`, height: '250px', width: '250px'}}>
@@ -24,8 +24,8 @@ function Home() {
                     </Card.Body>
                 </Card>
             </div>
-            <div className='add-card h-200'>
-            </div>
+            {/*<div className='add-card h-200'>*/}
+            {/*</div>*/}
         </div>
     );
 }
