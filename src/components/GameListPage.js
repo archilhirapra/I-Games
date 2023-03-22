@@ -78,15 +78,12 @@ const GameListPage = (props) => {
             {showAd && <FullScreenAd setShowAd={setShowAd}>
                 <iframe src="https://play561.atmequiz.com/" title="Quiz" width="100%" height="100%"/>
             </FullScreenAd>}
-            <div className='add-card h-200'>
-            </div>
             <Row>
                 {[...gamesList].map((item, i) => {
                     if (divide / i === 0 || divide / i === 1) {
                         divide = divide + 7;
                         return (<><Col md={12} lg={12} xxl={12} sm={12}>
-                                <div className='add-card h-200'>
-                                </div>
+                                <HomePage/>
                             </Col>
                                 <Col md={4} lg={4} xxl={4} sm={4}
                                      className="d-flex flex-column game-list-card p-3"
@@ -134,6 +131,7 @@ const GameListPage = (props) => {
                     }
                 })}
             </Row>
+            <HomePage/>
         </div>
     )
 };
