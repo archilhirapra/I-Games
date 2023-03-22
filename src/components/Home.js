@@ -9,7 +9,7 @@ function Home() {
     return (
         <div className="container mt-3">
             <div className='add-card h-200'>
-                <iframe src="http://1117.set.qureka.com" title="Quiz" width="100%" height="100%"/>
+                <iframe src="http://1111.set.qureka.com" title="Quiz" width="100%" height="100%"/>
             </div>
             <div className='d-flex flex-wrap my-5 align-items-center justify-content-evenly gap-3'>
                 <Card className='game-cards'
@@ -26,7 +26,7 @@ function Home() {
                 </Card>
             </div>
             <div className='add-card h-200'>
-                <iframe src="http://1117.set.qureka.com" title="Quiz" width="100%" height="100%"/>
+                <iframe src="http://1111.set.qureka.com" title="Quiz" width="100%" height="100%"/>
             </div>
         </div>
     );
