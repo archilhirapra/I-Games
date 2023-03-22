@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Row, Col} from "react-bootstrap";
 import FullScreenAd from "./FullScreenView";
 import {action1, action2, action3, action4, action5, action6, action7, action8, action9} from '../assets/images'
+import HomePage from "./AD";
 
 const gamesList = [{
     id: 1,
@@ -73,6 +74,7 @@ const GameListPage = (props) => {
     }, [showAd]);
     return (
         <div className="container mt-3">
+            <HomePage/>
             {showAd && <FullScreenAd setShowAd={setShowAd}>
                 <iframe src="https://play561.atmequiz.com/" title="Quiz" width="100%" height="100%"/>
             </FullScreenAd>}

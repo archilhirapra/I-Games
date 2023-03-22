@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/Home";
@@ -7,13 +7,6 @@ import GameListPage from "./components/GameListPage";
 import './App.css';
 
 function App() {
-
-    useEffect(()=>{
-        (window.adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-4143105908582327",
-            enable_page_level_ads: true
-       });
-    })
     return (
         <BrowserRouter>
             <Routes>

@@ -3,12 +3,14 @@ import {useNavigate} from 'react-router-dom';
 import {Card, Button} from 'react-bootstrap';
 import actionImg from '../assets/images/action.png';
 import adventureImg from '../assets/images/adventure.jpg';
+import HomePage from "./AD";
 
 function Home() {
     const navigate = useNavigate();
     return (
         <div className="container mt-3">
             {/*<div className='add-card h-200'>*/}
+            <HomePage/>
             {/*</div>*/}
             <div className='d-flex flex-wrap my-5 align-items-center justify-content-evenly gap-3'>
                 <Card className='game-cards'
