@@ -77,7 +77,6 @@ const GameListPage = (props) => {
                 <iframe src="https://play561.atmequiz.com/" title="Quiz" width="100%" height="100%"/>
             </FullScreenAd>}
             <div className='add-card h-200'>
-                <iframe src="http://1117.set.qureka.com" title="Quiz" width="100%" height="100%"/>
             </div>
             <Row>
                 {[...gamesList].map((item, i) => {
@@ -85,7 +84,6 @@ const GameListPage = (props) => {
                         divide = divide + 7;
                         return (<><Col md={12} lg={12} xxl={12} sm={12}>
                                 <div className='add-card h-200'>
-                                    <iframe src="http://1117.set.qureka.com" title="Quiz" width="100%" height="100%"/>
                                 </div>
                             </Col>
                                 <Col md={4} lg={4} xxl={4} sm={4}
