@@ -1,10 +1,11 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/Home";
 import Ads from "./components/Ads";
 import GameListPage from "./components/GameListPage";
 import './App.css';
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/adventure" element={<GameListPage isFrom='adventure' />} />
                 <Route path="*" element={<Home />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
